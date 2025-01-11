@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Production build outputs
+/build
+/dist
+
+# dotenv environment variable files
+.env
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Docker specific files
+# docker-compose.override.yml
+# docker-compose.*
+.dockerignore
+cred.txt
+/terraform
+/test

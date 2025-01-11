@@ -1,0 +1,526 @@
+.videoHero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+  }
+  
+  .videoContent {
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .videoContent h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    color: #ffffff; 
+    font-weight:bold;
+  }
+  
+  .videoContent p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+    color: #ffffff; 
+  }
+  
+  .videoSection {
+    padding: 50px 20px;
+    background-color: #f8f9fa; 
+    text-align: center;
+  }
+  
+  .videoSection h2 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color:  #1a73e8;
+    text-align: center; 
+    position: relative; 
+    display: inline-block; 
+    padding: 0 10px;
+    margin: 20px auto; 
+    border-bottom: 4px solid blue; 
+    width: 50%; 
+  }
+  
+  .videoCard {
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
+    margin: 2rem auto;
+    background-color: #ddd; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow:hidden;
+  }
+  .videoPlayer{
+    width: 100%;
+    object-fit: cover;
+  }
+  .videoCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .featuresSpreads{
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  }
+  
+  .featuresSpreads h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .featuresSpreads p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  .cardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .spreadsCard {
+    width: 350px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .spreadsCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .spreadsCardImage img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .spreadsCardContent {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .spreadsCardContent h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight:600;
+  }
+  
+  .spreadsCardContent p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .arrowRound {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .arrowRound:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
+  }
+  .maxWrapper {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .minWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .maxWrapper p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  .readMore p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .toggleReadMore {
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .toggleReadMore:hover {
+    color: #0056b3;
+  }
+
+  .logoSection {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  }
+  
+  .logoCard {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 900px;
+    margin: 0 auto;
+    background:#140078; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logoContent {
+    flex: 1;
+    padding-right: 20px; 
+  }
+  
+  .logoContent h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .logoContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+  }
+  
+  .logoImg {
+    flex: 0.5;
+  }
+  
+  .logoImg img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px; 
+  }
+  
+  .dreamsContainer {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #140078; 
+    box-shadow: 0 25px 50px rgba(0, 120, 215, 0.2); 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .dreamsContainer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1); 
+    transform: rotate(-45deg); 
+  }
+  
+  .dreamsBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 1000px;
+    box-sizing: border-box;
+  }
+  
+  .dreamsCrd {
+    position: relative;
+    width: 400px;  
+    height: 100%;
+    margin-top: 3rem;
+  }
+  
+  .cardOne {
+    position: absolute;
+    width: 150px; 
+    height: 150px;
+  }
+  
+  .cardOne img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cardOne:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    z-index: 1; 
+  }
+  
+  .cardOne:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50px); 
+    z-index: 2; 
+  }
+  
+  .cardOne:nth-child(3) {
+    left: 100%;
+    transform: translateX(-100%) translateY(-100px); 
+    z-index: 3; 
+  }
+  
+  .dreamsContent {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  
+  .dreamsContent p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .dreamsContent h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Responsive styles for mobile */
+   
+@media screen and (max-width: 768px) {
+    .videoHero {
+      height: 100vh;
+    }
+    .videoContent{
+      margin-top:10rem;
+    }
+    .videoContent h1 {
+      font-size: 2rem;
+    }
+  
+    .videoContent p {
+      font-size: 1rem;
+    }
+  
+    .videoSection h2 {
+      font-size: 2rem;
+      width: 80%;
+    }
+  
+    .videoCard {
+      height: 300px;
+    }
+  
+    .featuresSspreads {
+      padding: 2rem 10px;
+    }
+  
+    .spreadsCard {
+      width: 100%;
+      max-width: 90%;
+    }
+    
+    .minWrapper p {
+      font-size: 0.9rem;
+    }
+    .logoCard {
+      flex-direction: column;
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .logoContent {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .logoContent h2 {
+      font-size: 1.5rem;
+    }
+  
+    .logoContent p {
+      font-size: 0.9rem;
+    }
+  
+    .logoImg img {
+      max-width: 100%;
+    }
+    .dreamsBetween {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .dreamsContent {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      margin-top:5rem;
+    }
+  
+    .dreamsContent p {
+      font-size: 1rem;
+      line-height: 1.4;
+      color:white;
+    }
+  
+    .dreamsContent h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+      color:white;
+    }
+  
+    .dreamsCrd {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .cardOne {
+      width: 100px;
+      height: 100px;
+    }
+    .cardOne:nth-child(1) {
+      transform: translateX(0%) translateY(80px);
+    }
+    .cardOne:nth-child(2) {
+      transform: translateX(-50%) translateY(-20px);
+    }
+  
+    .cardOne:nth-child(3) {
+      transform: translateX(-100%) translateY(-20px);
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .videoHero {
+      height: 50vh;
+    }
+  
+    .videoContent h1 {
+      font-size: 1.5rem;
+    }
+  
+    .videoContent p {
+      font-size: 0.9rem;
+    }
+  
+    .videoSection h2 {
+      font-size: 1.8rem;
+    }
+  
+    .videoCard {
+      height: 250px;
+    }
+  
+    .featuresSpreads {
+      padding: 1.5rem 5px;
+    }
+  
+    .spreadsCard {
+      width: 100%;
+    }
+  
+    .minWrapper p {
+      font-size: 0.8rem;
+    }
+  
+    .logoCard {
+      flex-direction: column;
+      padding: 8px;
+    }
+  
+    .logoContent h2 {
+      font-size: 1.2rem;
+    }
+  
+    .dreamsContainer {
+      padding: 10px;
+    }
+  
+    .dreamsBetween {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dreamsCrd {
+      width: 100%;
+    }
+  
+    .dreamsContent {
+      width: 100%;
+      padding-left: 0;
+    }
+  
+    .textContent p {
+      font-size: 0.9rem;
+    }
+  
+    .dreamsText h1 {
+      font-size: 1.8rem;
+    }
+  }
+  

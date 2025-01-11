@@ -1,0 +1,126 @@
+.faqConsultationn {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 60px 20px;
+ 
+}
+
+.faqSectionn {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed) ease;
+}
+
+.faqSectionn:hover {
+  transform: translateY(-10px);
+}
+
+.faqSectionn h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.faqSectionn h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--primary-color);
+}
+
+.faqSectionn > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.faqListt {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faqListt li {
+  background: var(--light-background);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all var(--transition-speed) ease;
+  
+}
+
+.faqQuestionn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background: var(--white);
+  border-bottom: 1px solid rgb(54, 53, 53);
+  transition: all var(--transition-speed) ease;
+}
+
+.faqQuestionn:hover {
+  /* background: var(--primary-color); */
+  color: rgb(70, 70, 130);
+  border-bottom-color: var(--primary-color);
+}
+
+.faqQuestionn span {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.faqQuestionn button {
+  background: var(--white);
+  color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.faqQuestionn:hover button {
+  transform: rotate(180deg);
+}
+
+.faqAnswerr {
+  padding: 20px;
+  background: var(--light-background);
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  animation: fadeIn 0.5s ease;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .faqConsultationn {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+   
+  }
+  .faqSectionn {
+   width:100%;
+    box-shadow:none;
+  }
+}

@@ -1,0 +1,161 @@
+.landing-container {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .hero_bb {
+    background: linear-gradient(135deg, #2b0a4e 0%, #1a0435 100%);
+    color: white;
+    padding: 80px 40px;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  .hero-content_bb {
+    max-width: 600px;
+    flex: 1;
+  }
+  .hero-image_bb {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+  }
+  
+  .professional-b-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .hero_bb h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button_bb {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .cta-button_bb:hover {
+    background-color: white;
+    color: #2b0a4e;
+  }
+
+  
+  
+  /* Services Section */
+  .services_bussi {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .services_bussi h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #2b0a4e;
+  }
+  
+  .services-bussi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .service-bussi-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-bussi-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-bussi-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-bussi-card h3 {
+    color: #2b0a4e;
+    margin-bottom: 15px;
+  }
+  
+  /* Cloud Section */
+  .cloud-bussi {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../../assets/company.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 40px;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  .cloud-content-bussi {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .org-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .org-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .org-button:hover {
+    background-color: white;
+    color: #2b0a4e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero-image {
+        margin-top: 30px;
+        max-width: 100%;
+      }
+    
+    .services h2 {
+      font-size: 1.8rem;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
